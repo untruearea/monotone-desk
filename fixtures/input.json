@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "bins": [
+    {
+      "score": 1000,
+      "positives": 8,
+      "count": 10
+    },
+    {
+      "score": 2000,
+      "positives": 2,
+      "count": 10
+    },
+    {
+      "score": 3000,
+      "positives": 9,
+      "count": 10
+    },
+    {
+      "score": 3000,
+      "positives": 7,
+      "count": 10
+    },
+    {
+      "score": 4000,
+      "positives": 6,
+      "count": 10
+    }
+  ]
+}

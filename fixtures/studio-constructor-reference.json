@@ -1,0 +1,48 @@
+{
+  "provenance": "Actual public Studio61999 constructor transaction, fetched at 2026-10-20T22:08:48.801Z. Not a business-method live-flow verification.",
+  "hash": "0xe2b2fcdb22b10ef55e8b16647a3e5bfa264e22a5a7199a22f9647ac73391214c",
+  "status": "FINALIZED",
+  "from_address": "0x25157a7b5D240b335BBcb87EA990b3fdA5F77f21",
+  "to_address": "0xdF998ac2F7F89E80527b5fF2B15bd8E0639bbF2D",
+  "value": 0,
+  "execution_mode": "NORMAL",
+  "leader_only": false,
+  "result_name": "MAJORITY_AGREE",
+  "consensus_data": {
+    "leader_receipt": [
+      {
+        "mode": "leader",
+        "execution_result": "SUCCESS",
+        "vote": null,
+        "genvm_result": {
+          "stderr": "",
+          "stdout": "",
+          "raw_error": null,
+          "error_code": null,
+          "error_description": null
+        }
+      },
+      {
+        "mode": "validator",
+        "execution_result": "SUCCESS",
+        "vote": "agree",
+        "genvm_result": {
+          "stderr": "",
+          "stdout": "",
+          "raw_error": null,
+          "error_code": null,
+          "error_description": null
+        }
+      }
+    ]
+  },
+  "last_round": {
+    "validator_votes_name": [
+      "AGREE",
+      "AGREE",
+      "IDLE",
+      "AGREE",
+      "IDLE"
+    ]
+  }
+}

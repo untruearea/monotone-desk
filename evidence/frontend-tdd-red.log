@@ -1,0 +1,190 @@
+
+ RUN  v3.2.4 C:/Users/Administrator/Documents/ChatGPT/web3/contributions/genlayer-2026-10-21/profile03/projects/monotone-desk/frontend
+
+ ❯ tests/domain.test.ts (11 tests | 9 failed) 50ms
+   × draws the chain fit while preserving exact fractions and empirical points 17ms
+     → NOT_IMPLEMENTED
+   × does not manufacture a fit for the open sample 1ms
+     → NOT_IMPLEMENTED
+   ✓ rejects decreasing or out-of-domain purported chain rates 4ms
+   ✓ requires complete exact block membership before drawing 1ms
+   × gates confirm on creator, stage, revision, valid fit and certificate 1ms
+     → NOT_IMPLEMENTED
+   × rejects ambiguous repository . 13ms
+     → expected [Function] to throw error including 'commit-pinned' but got 'NOT_IMPLEMENTED'
+   × rejects ambiguous repository .. 2ms
+     → expected [Function] to throw error including 'commit-pinned' but got 'NOT_IMPLEMENTED'
+   × rejects ambiguous repository %2e 2ms
+     → expected [Function] to throw error including 'commit-pinned' but got 'NOT_IMPLEMENTED'
+   × preserves valid repository .github 1ms
+     → NOT_IMPLEMENTED
+   × preserves valid repository repo.name 1ms
+     → NOT_IMPLEMENTED
+   × preserves valid repository _repo 1ms
+     → NOT_IMPLEMENTED
+ ❯ tests/receipt.test.ts (4 tests | 4 failed) 48ms
+   × marks a write complete only after stored finality and execution return 26ms
+     → promise rejected "Error: NOT_IMPLEMENTED" instead of resolving
+   × does not accept an accepted or unknown receipt as finalized success 14ms
+     → expected [Function] to throw error including 'Finality' but got 'NOT_IMPLEMENTED'
+   × retains the exact submission across timeout and page reload without resubmission 3ms
+     → expected [Function] to throw error including 'timeout' but got 'NOT_IMPLEMENTED'
+   × resolves only the exact tracked hash and a known finalized result 2ms
+     → NOT_IMPLEMENTED
+ ❯ tests/wallet.test.ts (8 tests | 8 failed) 47ms
+   × reads the actual decoded SDK dictionary shape without parsing it as JSON text 22ms
+     → promise rejected "Error: NOT_IMPLEMENTED" instead of resolving
+   × rejects a non-dictionary SDK view payload: null 11ms
+     → expected [Function] to throw error including 'view' but got 'NOT_IMPLEMENTED'
+   × rejects a non-dictionary SDK view payload: %j 2ms
+     → expected [Function] to throw error including 'view' but got 'NOT_IMPLEMENTED'
+   × rejects a non-dictionary SDK view payload: "unexpected" 2ms
+     → expected [Function] to throw error including 'view' but got 'NOT_IMPLEMENTED'
+   × rejects a non-dictionary SDK view payload: "{\"status\":\"OPEN\"}" 2ms
+     → expected [Function] to throw error including 'view' but got 'NOT_IMPLEMENTED'
+   × rejects a non-dictionary SDK view payload: 42 2ms
+     → expected [Function] to throw error including 'view' but got 'NOT_IMPLEMENTED'
+   × rejects a non-dictionary SDK view payload: true 1ms
+     → expected [Function] to throw error including 'view' but got 'NOT_IMPLEMENTED'
+   × preserves a network or contract view failure instead of manufacturing a record 2ms
+     → expected [Function] to throw error including 'source view unavailable' but got 'NOT_IMPLEMENTED'
+
+ Test Files  3 failed (3)
+      Tests  21 failed | 2 passed (23)
+   Start at  06:05:39
+   Duration  2.96s (transform 503ms, setup 0ms, collect 545ms, tests 145ms, environment 7ms, prepare 2.81s)
+
+[ELIFECYCLE] Test failed. See above for more details.
+$ vitest run
+
+⎯⎯⎯⎯⎯⎯ Failed Tests 21 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  tests/domain.test.ts > draws the chain fit while preserving exact fractions and empirical points
+Error: NOT_IMPLEMENTED
+ ❯ fitRows src/domain.ts:2:58
+      1| export function openArgs(...args:unknown[]):unknown{throw Error("NOT_I…
+      2| export function fitRows(...args:unknown[]):unknown{throw Error("NOT_IM…
+       |                                                          ^
+      3| export function canConfirm(...args:unknown[]):boolean{throw Error("NOT…
+      4| 
+ ❯ tests/domain.test.ts:6:92
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/21]⎯
+
+ FAIL  tests/domain.test.ts > does not manufacture a fit for the open sample
+Error: NOT_IMPLEMENTED
+ ❯ fitRows src/domain.ts:2:58
+      1| export function openArgs(...args:unknown[]):unknown{throw Error("NOT_I…
+      2| export function fitRows(...args:unknown[]):unknown{throw Error("NOT_IM…
+       |                                                          ^
+      3| export function canConfirm(...args:unknown[]):boolean{throw Error("NOT…
+      4| 
+ ❯ tests/domain.test.ts:7:65
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/21]⎯
+
+ FAIL  tests/domain.test.ts > gates confirm on creator, stage, revision, valid fit and certificate
+Error: NOT_IMPLEMENTED
+ ❯ canConfirm src/domain.ts:3:61
+      1| export function openArgs(...args:unknown[]):unknown{throw Error("NOT_I…
+      2| export function fitRows(...args:unknown[]):unknown{throw Error("NOT_IM…
+      3| export function canConfirm(...args:unknown[]):boolean{throw Error("NOT…
+       |                                                             ^
+      4| 
+ ❯ tests/domain.test.ts:10:87
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[3/21]⎯
+
+ FAIL  tests/domain.test.ts > rejects ambiguous repository .
+ FAIL  tests/domain.test.ts > rejects ambiguous repository ..
+ FAIL  tests/domain.test.ts > rejects ambiguous repository %2e
+AssertionError: expected [Function] to throw error including 'commit-pinned' but got 'NOT_IMPLEMENTED'
+
+Expected: "commit-pinned"
+Received: "NOT_IMPLEMENTED"
+
+ ❯ tests/domain.test.ts:11:192
+
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[4/21]⎯
+
+ FAIL  tests/domain.test.ts > preserves valid repository .github
+ FAIL  tests/domain.test.ts > preserves valid repository repo.name
+ FAIL  tests/domain.test.ts > preserves valid repository _repo
+Error: NOT_IMPLEMENTED
+ ❯ openArgs src/domain.ts:1:59
+      1| export function openArgs(...args:unknown[]):unknown{throw Error("NOT_I…
+       |                                                           ^
+      2| export function fitRows(...args:unknown[]):unknown{throw Error("NOT_IM…
+      3| export function canConfirm(...args:unknown[]):boolean{throw Error("NOT…
+ ❯ tests/domain.test.ts:12:181
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[5/21]⎯
+
+ FAIL  tests/receipt.test.ts > marks a write complete only after stored finality and execution return
+AssertionError: promise rejected "Error: NOT_IMPLEMENTED" instead of resolving
+ ❯ tests/receipt.test.ts:7:154
+
+
+Caused by: Error: NOT_IMPLEMENTED
+ ❯ completeWrite src/core.ts:1:79
+ ❯ tests/receipt.test.ts:7:100
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[6/21]⎯
+
+ FAIL  tests/receipt.test.ts > does not accept an accepted or unknown receipt as finalized success
+AssertionError: expected [Function] to throw error including 'Finality' but got 'NOT_IMPLEMENTED'
+
+Expected: "Finality"
+Received: "NOT_IMPLEMENTED"
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[7/21]⎯
+
+ FAIL  tests/receipt.test.ts > retains the exact submission across timeout and page reload without resubmission
+AssertionError: expected [Function] to throw error including 'timeout' but got 'NOT_IMPLEMENTED'
+
+Expected: "timeout"
+Received: "NOT_IMPLEMENTED"
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[8/21]⎯
+
+ FAIL  tests/receipt.test.ts > resolves only the exact tracked hash and a known finalized result
+Error: NOT_IMPLEMENTED
+ ❯ PendingSubmission.record src/core.ts:2:112
+
+ ❯ tests/receipt.test.ts:10:124
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[9/21]⎯
+
+ FAIL  tests/wallet.test.ts > reads the actual decoded SDK dictionary shape without parsing it as JSON text
+AssertionError: promise rejected "Error: NOT_IMPLEMENTED" instead of resolving
+ ❯ tests/wallet.test.ts:7:360
+
+
+Caused by: Error: NOT_IMPLEMENTED
+ ❯ Module.read src/wallet.ts:1:70
+ ❯ tests/wallet.test.ts:7:319
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[10/21]⎯
+
+ FAIL  tests/wallet.test.ts > rejects a non-dictionary SDK view payload: null
+ FAIL  tests/wallet.test.ts > rejects a non-dictionary SDK view payload: %j
+ FAIL  tests/wallet.test.ts > rejects a non-dictionary SDK view payload: "unexpected"
+ FAIL  tests/wallet.test.ts > rejects a non-dictionary SDK view payload: "{\"status\":\"OPEN\"}"
+ FAIL  tests/wallet.test.ts > rejects a non-dictionary SDK view payload: 42
+ FAIL  tests/wallet.test.ts > rejects a non-dictionary SDK view payload: true
+AssertionError: expected [Function] to throw error including 'view' but got 'NOT_IMPLEMENTED'
+
+Expected: "view"
+Received: "NOT_IMPLEMENTED"
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[11/21]⎯
+
+ FAIL  tests/wallet.test.ts > preserves a network or contract view failure instead of manufacturing a record
+AssertionError: expected [Function] to throw error including 'source view unavailable' but got 'NOT_IMPLEMENTED'
+
+Expected: "source view unavailable"
+Received: "NOT_IMPLEMENTED"
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[12/21]⎯
+

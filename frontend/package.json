@@ -1,0 +1,21 @@
+{
+  "name": "monotone-desk",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "test": "vitest run",
+    "build": "tsc --noEmit && vite build"
+  },
+  "dependencies": {
+    "genlayer-js": "2.0.0-rc.2"
+  },
+  "devDependencies": {
+    "typescript": "5.9.3",
+    "vite": "7.1.12",
+    "vitest": "3.2.4",
+    "viem": "2.57.7"
+  },
+  "packageManager": "pnpm@11.25.0"
+}

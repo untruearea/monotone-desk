@@ -1,0 +1,3 @@
+# Current verification scope
+
+AI-assisted prototype. This public repository includes the exact reviewed source candidate and its historical local evidence, plus the compiled frontend in docs/. DEPLOYED_PROTOTYPE.json records the current free Studio constructor and byte verification. The constructor is FINALIZED/SUCCESS, NORMAL full consensus, zero value. The frontend wallet business workflow has not yet been verified live. Historical null metadata belongs to the frozen local candidate. No adoption, external users, audit, reward or portal acceptance is claimed. The Project contract is not separately counted as an independent IC.

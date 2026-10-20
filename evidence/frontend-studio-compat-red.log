@@ -1,0 +1,42 @@
+
+ RUN  v3.2.4 C:/Users/Administrator/Documents/ChatGPT/web3/contributions/genlayer-2026-10-21/profile03/projects/monotone-desk/frontend
+
+ ❯ tests/studio-compat.test.ts (4 tests | 2 failed) 30ms
+   ✓ reproduces actual SDK helper and viem formatter differences without mocking them 5ms
+   × proves actual formatted Studio success through independently verified raw receipt without synthesizing SDK fields 18ms
+     → promise rejected "Error: SDK transaction hash/sender/target…" instead of resolving
+   × can recover a submitted hash using raw strict evidence when SDK formatting throws, without resubmission 3ms
+     → promise rejected "TypeError: SDK formatter mismatch" instead of resolving
+   ✓ does not accept missing raw final proof when SDK observation throws 3ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 2 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  tests/studio-compat.test.ts > proves actual formatted Studio success through independently verified raw receipt without synthesizing SDK fields
+AssertionError: promise rejected "Error: SDK transaction hash/sender/target…" instead of resolving
+ ❯ tests/studio-compat.test.ts:11:234
+
+
+Caused by: Error: SDK transaction hash/sender/target/value binding is missing or mismatched.
+ ❯ assertSdk src/core.ts:11:158
+ ❯ completeWrite src/core.ts:32:2
+ ❯ tests/studio-compat.test.ts:11:151
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/2]⎯
+
+ FAIL  tests/studio-compat.test.ts > can recover a submitted hash using raw strict evidence when SDK formatting throws, without resubmission
+AssertionError: promise rejected "TypeError: SDK formatter mismatch" instead of resolving
+ ❯ tests/studio-compat.test.ts:12:269
+
+
+Caused by: TypeError: SDK formatter mismatch
+ ❯ tests/studio-compat.test.ts:12:196
+ ❯ completeWrite src/core.ts:31:17
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/2]⎯
+
+
+ Test Files  1 failed (1)
+      Tests  2 failed | 2 passed (4)
+   Start at  06:26:38
+   Duration  2.53s (transform 168ms, setup 0ms, collect 1.12s, tests 30ms, environment 0ms, prepare 783ms)
+

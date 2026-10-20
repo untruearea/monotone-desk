@@ -1,0 +1,15 @@
+$ vitest run
+
+ RUN  v3.2.4 C:/Users/Administrator/Documents/ChatGPT/web3/contributions/genlayer-2026-10-21/profile03/projects/monotone-desk/frontend
+
+ ✓ tests/domain.test.ts (12 tests) 19ms
+ ✓ tests/wallet-write.test.ts (3 tests) 25ms
+ ✓ tests/receipt.test.ts (22 tests) 61ms
+ ✓ tests/wallet.test.ts (8 tests) 19ms
+ ✓ tests/studio-compat.test.ts (4 tests) 24ms
+
+ Test Files  5 passed (5)
+      Tests  49 passed (49)
+   Start at  06:27:18
+   Duration  3.40s (transform 617ms, setup 0ms, collect 6.25s, tests 148ms, environment 2ms, prepare 2.88s)
+

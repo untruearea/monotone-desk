@@ -1,0 +1,15 @@
+{
+  "old_candidate_zip_sha256": "29a7de0a3dac92273703a9234cdeba269c330dc776ee206f194c256fa9b49314",
+  "unchanged_bytes_compared_against_original_archive": {
+    "contract.py": "7f125508b8f743be9e9c4606fd40353429216d860065438e27ffddb1c0bf5434",
+    "fixtures/README.md": "76343ec0123c186468cbdf54de94e9afcea1c715617651b5a851e3f1470f15f5",
+    "fixtures/input.json": "478c62b9364cb6c0048636fbce6e8356487e2652e93026acb02a571f3d69455f",
+    "fixtures/source.json": "54792e5aa5f4fb11322c6fd739e3ddc800bc59dbe3a03fbd74bf4c9c78d2a2e3",
+    "fixtures/studio-constructor-reference.json": "a59d5aef16c32744565e1b0fb158e33abadcb55e8f63a6c83dc22d3284df7ac6",
+    "frontend/src/demo.ts": "95153c19c2cd7861330c9da58ce6df2b2d6feb271f7eddf70abef28a86375beb",
+    "frontend/src/domain.ts": "00ecaecb3f20d9586757effc538c7ce16d15823a8da6b18c814e864e5a3d1df9",
+    "frontend/src/main.ts": "f6307003cc58045c2f62e30f23d796e69dcfd7286d7e4590bc762b4bbda98ed9",
+    "frontend/src/wallet.ts": "e27f28c9f323e2c671471c5f7c638e1dc0908352fa1f2dc934acdae42e62e866"
+  },
+  "scope": "Old ZIP was read only. No Python/domain/fixture changes or test reruns."
+}

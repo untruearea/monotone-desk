@@ -1,0 +1,131 @@
+
+ RUN  v3.2.4 C:/Users/Administrator/Documents/ChatGPT/web3/contributions/genlayer-2026-10-21/profile03/projects/monotone-desk/frontend
+
+ ✓ tests/domain.test.ts (11 tests) 22ms
+ ✓ tests/wallet.test.ts (8 tests) 15ms
+ ❯ tests/receipt.test.ts (18 tests | 16 failed) 57ms
+   ✓ accepts actual public Studio reference shape including number0 and nonfatal IDLE validators 4ms
+   ✓ marks completion only after SDK stored finality and execution return 3ms
+   × retains exact hash and original context across timeout and reload, with one submit 17ms
+     → expected undefined to deeply equal { …(3) }
+   × passes only the actually verified receipt to submission recovery 7ms
+     → expected "spy" to be called with arguments: [ …(3) ]
+
+Number of calls: 0
+
+   × blocks raw hash mismatch before completion and retains pending 3ms
+     → promise resolved "'0xe2b2fcdb22b10ef55e8b16647a3e5bfa264…'" instead of rejecting
+   × blocks raw from mismatch before completion and retains pending 2ms
+     → promise resolved "'0xe2b2fcdb22b10ef55e8b16647a3e5bfa264…'" instead of rejecting
+   × blocks raw target mismatch before completion and retains pending 2ms
+     → promise resolved "'0xe2b2fcdb22b10ef55e8b16647a3e5bfa264…'" instead of rejecting
+   × blocks raw value mismatch before completion and retains pending 1ms
+     → promise resolved "'0xe2b2fcdb22b10ef55e8b16647a3e5bfa264…'" instead of rejecting
+   × blocks raw missing_value mismatch before completion and retains pending 2ms
+     → promise resolved "'0xe2b2fcdb22b10ef55e8b16647a3e5bfa264…'" instead of rejecting
+   × blocks raw missing_leader mismatch before completion and retains pending 1ms
+     → promise resolved "'0xe2b2fcdb22b10ef55e8b16647a3e5bfa264…'" instead of rejecting
+   × blocks raw leader_error mismatch before completion and retains pending 1ms
+     → promise resolved "'0xe2b2fcdb22b10ef55e8b16647a3e5bfa264…'" instead of rejecting
+   × blocks raw multiple_leaders mismatch before completion and retains pending 1ms
+     → promise resolved "'0xe2b2fcdb22b10ef55e8b16647a3e5bfa264…'" instead of rejecting
+   × blocks raw mode mismatch before completion and retains pending 1ms
+     → promise resolved "'0xe2b2fcdb22b10ef55e8b16647a3e5bfa264…'" instead of rejecting
+   × blocks raw leader_only mismatch before completion and retains pending 1ms
+     → promise resolved "'0xe2b2fcdb22b10ef55e8b16647a3e5bfa264…'" instead of rejecting
+   × blocks raw quorum mismatch before completion and retains pending 1ms
+     → promise resolved "'0xe2b2fcdb22b10ef55e8b16647a3e5bfa264…'" instead of rejecting
+   × blocks raw pending mismatch before completion and retains pending 1ms
+     → promise resolved "'0xe2b2fcdb22b10ef55e8b16647a3e5bfa264…'" instead of rejecting
+   × does not clear pending for an unrelated hash or missing raw proof 6ms
+     → expected 'success' to be 'unknown' // Object.is equality
+   × does not turn a finalized SDK execution error into success or silently clear it 1ms
+     → expected 'failed' to be 'unknown' // Object.is equality
+
+ Test Files  1 failed | 2 passed (3)
+      Tests  16 failed | 21 passed (37)
+   Start at  06:18:40
+   Duration  3.13s (transform 488ms, setup 0ms, collect 2.78s, tests 93ms, environment 2ms, prepare 1.93s)
+
+[ELIFECYCLE] Test failed. See above for more details.
+$ vitest run
+
+⎯⎯⎯⎯⎯⎯ Failed Tests 16 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  tests/receipt.test.ts > retains exact hash and original context across timeout and reload, with one submit
+AssertionError: expected undefined to deeply equal { …(3) }
+
+- Expected: 
+{
+  "from": "0x25157a7b5D240b335BBcb87EA990b3fdA5F77f21",
+  "to": "0xdF998ac2F7F89E80527b5fF2B15bd8E0639bbF2D",
+  "value": 0n,
+}
+
++ Received: 
+undefined
+
+ ❯ tests/receipt.test.ts:12:526
+
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/16]⎯
+
+ FAIL  tests/receipt.test.ts > passes only the actually verified receipt to submission recovery
+AssertionError: expected "spy" to be called with arguments: [ …(3) ]
+
+Number of calls: 0
+
+ ❯ tests/receipt.test.ts:13:209
+
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/16]⎯
+
+ FAIL  tests/receipt.test.ts > blocks raw hash mismatch before completion and retains pending
+ FAIL  tests/receipt.test.ts > blocks raw from mismatch before completion and retains pending
+ FAIL  tests/receipt.test.ts > blocks raw target mismatch before completion and retains pending
+ FAIL  tests/receipt.test.ts > blocks raw value mismatch before completion and retains pending
+ FAIL  tests/receipt.test.ts > blocks raw missing_value mismatch before completion and retains pending
+ FAIL  tests/receipt.test.ts > blocks raw missing_leader mismatch before completion and retains pending
+ FAIL  tests/receipt.test.ts > blocks raw leader_error mismatch before completion and retains pending
+ FAIL  tests/receipt.test.ts > blocks raw multiple_leaders mismatch before completion and retains pending
+ FAIL  tests/receipt.test.ts > blocks raw mode mismatch before completion and retains pending
+ FAIL  tests/receipt.test.ts > blocks raw leader_only mismatch before completion and retains pending
+ FAIL  tests/receipt.test.ts > blocks raw quorum mismatch before completion and retains pending
+ FAIL  tests/receipt.test.ts > blocks raw pending mismatch before completion and retains pending
+AssertionError: promise resolved "'0xe2b2fcdb22b10ef55e8b16647a3e5bfa264…'" instead of rejecting
+
+- Expected: 
+Error {
+  "message": "rejected promise",
+}
+
++ Received: 
+"0xe2b2fcdb22b10ef55e8b16647a3e5bfa264e22a5a7199a22f9647ac73391214c"
+
+ ❯ tests/receipt.test.ts:14:1088
+
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[3/16]⎯
+
+ FAIL  tests/receipt.test.ts > does not clear pending for an unrelated hash or missing raw proof
+AssertionError: expected 'success' to be 'unknown' // Object.is equality
+
+Expected: "unknown"
+Received: "success"
+
+ ❯ tests/receipt.test.ts:15:256
+
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[4/16]⎯
+
+ FAIL  tests/receipt.test.ts > does not turn a finalized SDK execution error into success or silently clear it
+AssertionError: expected 'failed' to be 'unknown' // Object.is equality
+
+Expected: "unknown"
+Received: "failed"
+
+ ❯ tests/receipt.test.ts:16:235
+
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[5/16]⎯
+

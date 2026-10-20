@@ -1,0 +1,11 @@
+{
+  "fixture_kind": "explicitly synthetic unpublished mock-only input",
+  "file": "input.json",
+  "sha256": "478c62b9364cb6c0048636fbce6e8356487e2652e93026acb02a571f3d69455f",
+  "bytes": 405,
+  "public_url": null,
+  "test_url": "https://raw.githubusercontent.com/synthetic-fixture/monotone-desk/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/input.json",
+  "deployment": null,
+  "hosting": null,
+  "live_source_verified": false
+}

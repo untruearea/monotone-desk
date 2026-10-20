@@ -1,0 +1,28 @@
+WARNING: File `gltest.config.yaml` not found in the current directory, using default config, create a `gltest.config.yaml` file to manage multiple networks
+INFO: Clearing artifacts directory: artifacts
+INFO: Using the following configuration:
+INFO:   RPC URL: http://127.0.0.1:4000/api
+INFO:   Selected Network: localnet
+INFO:   Available networks: ['localnet', 'studionet', 'testnet_asimov', 'testnet_bradbury']
+INFO:   Selected chain type: localnet
+INFO:   Available chains: localnet, studionet, testnet_asimov, testnet_bradbury
+INFO:   Contracts directory: contracts
+INFO:   Artifacts directory: artifacts
+INFO:   Environment: .env
+INFO:   Default wait interval: 3000 ms
+INFO:   Default wait retries: 50
+INFO:   Leader only mode: False
+F                                                                        [100%]
+================================== FAILURES ===================================
+________ test_fixture_exact_bytes_match_declared_publication_metadata _________
+
+    def test_fixture_exact_bytes_match_declared_publication_metadata():
+        body=(ROOT/'fixtures/input.json').read_bytes()
+>       assert len(body)==META['bytes']
+E       assert 435 == 405
+E        +  where 435 = len(b'{\r\n  "version": 1,\r\n  "bins": [\r\n    {\r\n      "score": 1000,\r\n      "positives": 8,\r\n      "count": 10\r...: 10\r\n    },\r\n    {\r\n      "score": 4000,\r\n      "positives": 6,\r\n      "count": 10\r\n    }\r\n  ]\r\n}\r\n')
+
+tests\test_contract.py:152: AssertionError
+=========================== short test summary info ===========================
+FAILED tests/test_contract.py::test_fixture_exact_bytes_match_declared_publication_metadata
+1 failed in 0.45s

@@ -1,0 +1,40 @@
+
+ RUN  v3.2.4 C:/Users/Administrator/Documents/ChatGPT/web3/contributions/genlayer-2026-10-21/profile03/projects/monotone-desk/frontend
+
+ ❯ tests/domain.test.ts (12 tests | 1 failed) 37ms
+   ✓ draws the chain fit while preserving exact fractions and empirical points 6ms
+   ✓ does not manufacture a fit for the open sample 1ms
+   ✓ rejects decreasing or out-of-domain purported chain rates 3ms
+   ✓ requires complete exact block membership before drawing 1ms
+   ✓ gates confirm on creator, stage, revision, valid fit and certificate 1ms
+   ✓ rejects ambiguous repository . 1ms
+   ✓ rejects ambiguous repository .. 0ms
+   ✓ rejects ambiguous repository %2e 0ms
+   ✓ preserves valid repository .github 1ms
+   ✓ preserves valid repository repo.name 0ms
+   ✓ preserves valid repository _repo 0ms
+   × blocks confirmation after visible record ID changes without a fresh read 19ms
+     → expected true to be false // Object.is equality
+
+ Test Files  1 failed (1)
+      Tests  1 failed | 11 passed (12)
+   Start at  06:20:00
+   Duration  2.14s (transform 121ms, setup 0ms, collect 107ms, tests 37ms, environment 1ms, prepare 467ms)
+
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  tests/domain.test.ts > blocks confirmation after visible record ID changes without a fresh read
+AssertionError: expected true to be false // Object.is equality
+
+- Expected
++ Received
+
+- false
++ true
+
+ ❯ tests/domain.test.ts:14:136
+
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+

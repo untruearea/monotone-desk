@@ -1,0 +1,34 @@
+{
+  "source": "contract.py",
+  "source_sha256": "7f125508b8f743be9e9c4606fd40353429216d860065438e27ffddb1c0bf5434",
+  "genvm_release": "v0.2.12",
+  "runner": "py-genlayer:1jb45aa8ynh2a9c9xn3b7qqh8sm5q93hwfp7jqmwsfhh8jpz09h6",
+  "stdlib": "py-lib-genlayer-std:11rhn002yfajawsz7fai6mykznbxkxs6l91iskj5cm82c92qhy3v",
+  "packages": {
+    "genlayer-test": "0.29.2",
+    "genvm-linter": "0.11.0",
+    "cloudpickle": "3.1.2",
+    "pytest": "9.1.1"
+  },
+  "checks": {
+    "tests": {
+      "exit_code": 0,
+      "passed": true
+    },
+    "lint": {
+      "exit_code": 0,
+      "passed": true
+    },
+    "schema": {
+      "exit_code": 0,
+      "passed": true
+    }
+  },
+  "live_consensus_tested": false,
+  "deployment": null,
+  "python_tests": 34,
+  "actual_sdk_contract_tests": 33,
+  "fixture_integrity_tests": 1,
+  "test_log_refreshed_after_exact_byte_fixture_fix": true,
+  "semantic_and_schema_source_unchanged": true
+}

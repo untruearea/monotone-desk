@@ -1,0 +1,19 @@
+{
+  "scope": "Minimal local frontend correction of the existing Project; not a new contribution",
+  "contract_sha256": "7f125508b8f743be9e9c4606fd40353429216d860065438e27ffddb1c0bf5434",
+  "contract_changed": false,
+  "domain_algorithm_changed": false,
+  "fixture_bytes_changed": false,
+  "frontend_tests": 55,
+  "required_regression_red": {
+    "failed": 4,
+    "passed": 22
+  },
+  "verification": "evidence/receipt-revision-2026-10-21/verification.json",
+  "publication": null,
+  "deployment": null,
+  "hosting": null,
+  "live_business_flow_verified": false,
+  "independent_patch_review": "closed_local_scope",
+  "reviewer": "/root/genlayer_projects05"
+}

@@ -1,0 +1,895 @@
+FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF                                        [100%]
+================================== FAILURES ===================================
+_________ test_literal_exact_weighted_pava_blocks_losses_and_confirm __________
+
+direct_vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+direct_deploy = <function direct_deploy.<locals>._deploy at 0x0000019CA2A2FC40>
+
+    def test_literal_exact_weighted_pava_blocks_losses_and_confirm(direct_vm, direct_deploy):
+>       c=deploy(direct_vm,direct_deploy);r=derive(direct_vm,c)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_contract.py:32: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+build = <function direct_deploy.<locals>._deploy at 0x0000019CA2A2FC40>
+
+    def deploy(vm, build):
+        vm.warp('2026-10-21T00:00:00Z')
+        c = build(str(ROOT/'contract.py'), sdk_version='v0.2.12')
+>       assert hasattr(c, 'open_fit'), 'MonotoneDesk API NOT_IMPLEMENTED'
+E       AssertionError: MonotoneDesk API NOT_IMPLEMENTED
+E       assert False
+E        +  where False = hasattr(<CalldataProxy for <_contract_contract.MonotoneDesk object at 0x0000019C9CE335C0>>, 'open_fit')
+
+tests\test_contract.py:17: AssertionError
+__________ test_equal_means_merge_canonically_and_loss_is_exact_zero __________
+
+direct_vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+direct_deploy = <function direct_deploy.<locals>._deploy at 0x0000019CA2BFCAE0>
+
+    def test_equal_means_merge_canonically_and_loss_is_exact_zero(direct_vm,direct_deploy):
+>       c=deploy(direct_vm,direct_deploy)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_contract.py:49: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+build = <function direct_deploy.<locals>._deploy at 0x0000019CA2BFCAE0>
+
+    def deploy(vm, build):
+        vm.warp('2026-10-21T00:00:00Z')
+        c = build(str(ROOT/'contract.py'), sdk_version='v0.2.12')
+>       assert hasattr(c, 'open_fit'), 'MonotoneDesk API NOT_IMPLEMENTED'
+E       AssertionError: MonotoneDesk API NOT_IMPLEMENTED
+E       assert False
+E        +  where False = hasattr(<CalldataProxy for <_contract_contract.MonotoneDesk object at 0x0000019CA2C3B3E0>>, 'open_fit')
+
+tests\test_contract.py:17: AssertionError
+____________ test_duplicate_scores_keep_original_row_loss_constant ____________
+
+direct_vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+direct_deploy = <function direct_deploy.<locals>._deploy at 0x0000019CA2C79A80>
+
+    def test_duplicate_scores_keep_original_row_loss_constant(direct_vm,direct_deploy):
+>       c=deploy(direct_vm,direct_deploy)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_contract.py:58: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+build = <function direct_deploy.<locals>._deploy at 0x0000019CA2C79A80>
+
+    def deploy(vm, build):
+        vm.warp('2026-10-21T00:00:00Z')
+        c = build(str(ROOT/'contract.py'), sdk_version='v0.2.12')
+>       assert hasattr(c, 'open_fit'), 'MonotoneDesk API NOT_IMPLEMENTED'
+E       AssertionError: MonotoneDesk API NOT_IMPLEMENTED
+E       assert False
+E        +  where False = hasattr(<CalldataProxy for <_contract_contract.MonotoneDesk object at 0x0000019CA2C830B0>>, 'open_fit')
+
+tests\test_contract.py:17: AssertionError
+_____________ test_monotone_extremes_and_single_row_are_unchanged _____________
+
+direct_vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+direct_deploy = <function direct_deploy.<locals>._deploy at 0x0000019CA2D074C0>
+
+    def test_monotone_extremes_and_single_row_are_unchanged(direct_vm,direct_deploy):
+>       c=deploy(direct_vm,direct_deploy)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_contract.py:65: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+build = <function direct_deploy.<locals>._deploy at 0x0000019CA2D074C0>
+
+    def deploy(vm, build):
+        vm.warp('2026-10-21T00:00:00Z')
+        c = build(str(ROOT/'contract.py'), sdk_version='v0.2.12')
+>       assert hasattr(c, 'open_fit'), 'MonotoneDesk API NOT_IMPLEMENTED'
+E       AssertionError: MonotoneDesk API NOT_IMPLEMENTED
+E       assert False
+E        +  where False = hasattr(<CalldataProxy for <_contract_contract.MonotoneDesk object at 0x0000019CA2D5DD90>>, 'open_fit')
+
+tests\test_contract.py:17: AssertionError
+___ test_descending_sample_pools_and_input_permutation_does_not_change_fit ____
+
+direct_vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+direct_deploy = <function direct_deploy.<locals>._deploy at 0x0000019CA2D07060>
+
+    def test_descending_sample_pools_and_input_permutation_does_not_change_fit(direct_vm,direct_deploy):
+>       c=deploy(direct_vm,direct_deploy)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_contract.py:72: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+build = <function direct_deploy.<locals>._deploy at 0x0000019CA2D07060>
+
+    def deploy(vm, build):
+        vm.warp('2026-10-21T00:00:00Z')
+        c = build(str(ROOT/'contract.py'), sdk_version='v0.2.12')
+>       assert hasattr(c, 'open_fit'), 'MonotoneDesk API NOT_IMPLEMENTED'
+E       AssertionError: MonotoneDesk API NOT_IMPLEMENTED
+E       assert False
+E        +  where False = hasattr(<CalldataProxy for <_contract_contract.MonotoneDesk object at 0x0000019CA2DBAB10>>, 'open_fit')
+
+tests\test_contract.py:17: AssertionError
+__________________ test_strict_bounded_integers[score-True] ___________________
+
+direct_vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+direct_deploy = <function direct_deploy.<locals>._deploy at 0x0000019CA2E05D00>
+field = 'score', value = True
+
+    @pytest.mark.parametrize('field,value',[('score',True),('score',1.0),('score',-1),('score',10001),('positives',False),('positives',11),('positives',-1),('count',0),('count',10001),('count',10.0)])
+    def test_strict_bounded_integers(direct_vm,direct_deploy,field,value):
+>       c=deploy(direct_vm,direct_deploy);sample=json.loads(BODY);sample['bins'][0][field]=value
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_contract.py:81: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+build = <function direct_deploy.<locals>._deploy at 0x0000019CA2E05D00>
+
+    def deploy(vm, build):
+        vm.warp('2026-10-21T00:00:00Z')
+        c = build(str(ROOT/'contract.py'), sdk_version='v0.2.12')
+>       assert hasattr(c, 'open_fit'), 'MonotoneDesk API NOT_IMPLEMENTED'
+E       AssertionError: MonotoneDesk API NOT_IMPLEMENTED
+E       assert False
+E        +  where False = hasattr(<CalldataProxy for <_contract_contract.MonotoneDesk object at 0x0000019CA2DFBA70>>, 'open_fit')
+
+tests\test_contract.py:17: AssertionError
+___________________ test_strict_bounded_integers[score-1.0] ___________________
+
+direct_vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+direct_deploy = <function direct_deploy.<locals>._deploy at 0x0000019CA2EABE20>
+field = 'score', value = 1.0
+
+    @pytest.mark.parametrize('field,value',[('score',True),('score',1.0),('score',-1),('score',10001),('positives',False),('positives',11),('positives',-1),('count',0),('count',10001),('count',10.0)])
+    def test_strict_bounded_integers(direct_vm,direct_deploy,field,value):
+>       c=deploy(direct_vm,direct_deploy);sample=json.loads(BODY);sample['bins'][0][field]=value
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_contract.py:81: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+build = <function direct_deploy.<locals>._deploy at 0x0000019CA2EABE20>
+
+    def deploy(vm, build):
+        vm.warp('2026-10-21T00:00:00Z')
+        c = build(str(ROOT/'contract.py'), sdk_version='v0.2.12')
+>       assert hasattr(c, 'open_fit'), 'MonotoneDesk API NOT_IMPLEMENTED'
+E       AssertionError: MonotoneDesk API NOT_IMPLEMENTED
+E       assert False
+E        +  where False = hasattr(<CalldataProxy for <_contract_contract.MonotoneDesk object at 0x0000019CA2F31910>>, 'open_fit')
+
+tests\test_contract.py:17: AssertionError
+___________________ test_strict_bounded_integers[score--1] ____________________
+
+direct_vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+direct_deploy = <function direct_deploy.<locals>._deploy at 0x0000019CA2F5D620>
+field = 'score', value = -1
+
+    @pytest.mark.parametrize('field,value',[('score',True),('score',1.0),('score',-1),('score',10001),('positives',False),('positives',11),('positives',-1),('count',0),('count',10001),('count',10.0)])
+    def test_strict_bounded_integers(direct_vm,direct_deploy,field,value):
+>       c=deploy(direct_vm,direct_deploy);sample=json.loads(BODY);sample['bins'][0][field]=value
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_contract.py:81: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+build = <function direct_deploy.<locals>._deploy at 0x0000019CA2F5D620>
+
+    def deploy(vm, build):
+        vm.warp('2026-10-21T00:00:00Z')
+        c = build(str(ROOT/'contract.py'), sdk_version='v0.2.12')
+>       assert hasattr(c, 'open_fit'), 'MonotoneDesk API NOT_IMPLEMENTED'
+E       AssertionError: MonotoneDesk API NOT_IMPLEMENTED
+E       assert False
+E        +  where False = hasattr(<CalldataProxy for <_contract_contract.MonotoneDesk object at 0x0000019CA2F62270>>, 'open_fit')
+
+tests\test_contract.py:17: AssertionError
+__________________ test_strict_bounded_integers[score-10001] __________________
+
+direct_vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+direct_deploy = <function direct_deploy.<locals>._deploy at 0x0000019CA2FE31A0>
+field = 'score', value = 10001
+
+    @pytest.mark.parametrize('field,value',[('score',True),('score',1.0),('score',-1),('score',10001),('positives',False),('positives',11),('positives',-1),('count',0),('count',10001),('count',10.0)])
+    def test_strict_bounded_integers(direct_vm,direct_deploy,field,value):
+>       c=deploy(direct_vm,direct_deploy);sample=json.loads(BODY);sample['bins'][0][field]=value
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_contract.py:81: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+build = <function direct_deploy.<locals>._deploy at 0x0000019CA2FE31A0>
+
+    def deploy(vm, build):
+        vm.warp('2026-10-21T00:00:00Z')
+        c = build(str(ROOT/'contract.py'), sdk_version='v0.2.12')
+>       assert hasattr(c, 'open_fit'), 'MonotoneDesk API NOT_IMPLEMENTED'
+E       AssertionError: MonotoneDesk API NOT_IMPLEMENTED
+E       assert False
+E        +  where False = hasattr(<CalldataProxy for <_contract_contract.MonotoneDesk object at 0x0000019CA2F674D0>>, 'open_fit')
+
+tests\test_contract.py:17: AssertionError
+________________ test_strict_bounded_integers[positives-False] ________________
+
+direct_vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+direct_deploy = <function direct_deploy.<locals>._deploy at 0x0000019CA3094220>
+field = 'positives', value = False
+
+    @pytest.mark.parametrize('field,value',[('score',True),('score',1.0),('score',-1),('score',10001),('positives',False),('positives',11),('positives',-1),('count',0),('count',10001),('count',10.0)])
+    def test_strict_bounded_integers(direct_vm,direct_deploy,field,value):
+>       c=deploy(direct_vm,direct_deploy);sample=json.loads(BODY);sample['bins'][0][field]=value
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_contract.py:81: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+build = <function direct_deploy.<locals>._deploy at 0x0000019CA3094220>
+
+    def deploy(vm, build):
+        vm.warp('2026-10-21T00:00:00Z')
+        c = build(str(ROOT/'contract.py'), sdk_version='v0.2.12')
+>       assert hasattr(c, 'open_fit'), 'MonotoneDesk API NOT_IMPLEMENTED'
+E       AssertionError: MonotoneDesk API NOT_IMPLEMENTED
+E       assert False
+E        +  where False = hasattr(<CalldataProxy for <_contract_contract.MonotoneDesk object at 0x0000019CA30F7BF0>>, 'open_fit')
+
+tests\test_contract.py:17: AssertionError
+_________________ test_strict_bounded_integers[positives-11] __________________
+
+direct_vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+direct_deploy = <function direct_deploy.<locals>._deploy at 0x0000019CA3119940>
+field = 'positives', value = 11
+
+    @pytest.mark.parametrize('field,value',[('score',True),('score',1.0),('score',-1),('score',10001),('positives',False),('positives',11),('positives',-1),('count',0),('count',10001),('count',10.0)])
+    def test_strict_bounded_integers(direct_vm,direct_deploy,field,value):
+>       c=deploy(direct_vm,direct_deploy);sample=json.loads(BODY);sample['bins'][0][field]=value
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_contract.py:81: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+build = <function direct_deploy.<locals>._deploy at 0x0000019CA3119940>
+
+    def deploy(vm, build):
+        vm.warp('2026-10-21T00:00:00Z')
+        c = build(str(ROOT/'contract.py'), sdk_version='v0.2.12')
+>       assert hasattr(c, 'open_fit'), 'MonotoneDesk API NOT_IMPLEMENTED'
+E       AssertionError: MonotoneDesk API NOT_IMPLEMENTED
+E       assert False
+E        +  where False = hasattr(<CalldataProxy for <_contract_contract.MonotoneDesk object at 0x0000019CA30F6B10>>, 'open_fit')
+
+tests\test_contract.py:17: AssertionError
+_________________ test_strict_bounded_integers[positives--1] __________________
+
+direct_vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+direct_deploy = <function direct_deploy.<locals>._deploy at 0x0000019CA31B3560>
+field = 'positives', value = -1
+
+    @pytest.mark.parametrize('field,value',[('score',True),('score',1.0),('score',-1),('score',10001),('positives',False),('positives',11),('positives',-1),('count',0),('count',10001),('count',10.0)])
+    def test_strict_bounded_integers(direct_vm,direct_deploy,field,value):
+>       c=deploy(direct_vm,direct_deploy);sample=json.loads(BODY);sample['bins'][0][field]=value
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_contract.py:81: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+build = <function direct_deploy.<locals>._deploy at 0x0000019CA31B3560>
+
+    def deploy(vm, build):
+        vm.warp('2026-10-21T00:00:00Z')
+        c = build(str(ROOT/'contract.py'), sdk_version='v0.2.12')
+>       assert hasattr(c, 'open_fit'), 'MonotoneDesk API NOT_IMPLEMENTED'
+E       AssertionError: MonotoneDesk API NOT_IMPLEMENTED
+E       assert False
+E        +  where False = hasattr(<CalldataProxy for <_contract_contract.MonotoneDesk object at 0x0000019CA3186D20>>, 'open_fit')
+
+tests\test_contract.py:17: AssertionError
+____________________ test_strict_bounded_integers[count-0] ____________________
+
+direct_vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+direct_deploy = <function direct_deploy.<locals>._deploy at 0x0000019CA32507C0>
+field = 'count', value = 0
+
+    @pytest.mark.parametrize('field,value',[('score',True),('score',1.0),('score',-1),('score',10001),('positives',False),('positives',11),('positives',-1),('count',0),('count',10001),('count',10.0)])
+    def test_strict_bounded_integers(direct_vm,direct_deploy,field,value):
+>       c=deploy(direct_vm,direct_deploy);sample=json.loads(BODY);sample['bins'][0][field]=value
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_contract.py:81: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+build = <function direct_deploy.<locals>._deploy at 0x0000019CA32507C0>
+
+    def deploy(vm, build):
+        vm.warp('2026-10-21T00:00:00Z')
+        c = build(str(ROOT/'contract.py'), sdk_version='v0.2.12')
+>       assert hasattr(c, 'open_fit'), 'MonotoneDesk API NOT_IMPLEMENTED'
+E       AssertionError: MonotoneDesk API NOT_IMPLEMENTED
+E       assert False
+E        +  where False = hasattr(<CalldataProxy for <_contract_contract.MonotoneDesk object at 0x0000019CA2D5EDB0>>, 'open_fit')
+
+tests\test_contract.py:17: AssertionError
+__________________ test_strict_bounded_integers[count-10001] __________________
+
+direct_vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+direct_deploy = <function direct_deploy.<locals>._deploy at 0x0000019CA32DE5C0>
+field = 'count', value = 10001
+
+    @pytest.mark.parametrize('field,value',[('score',True),('score',1.0),('score',-1),('score',10001),('positives',False),('positives',11),('positives',-1),('count',0),('count',10001),('count',10.0)])
+    def test_strict_bounded_integers(direct_vm,direct_deploy,field,value):
+>       c=deploy(direct_vm,direct_deploy);sample=json.loads(BODY);sample['bins'][0][field]=value
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_contract.py:81: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+build = <function direct_deploy.<locals>._deploy at 0x0000019CA32DE5C0>
+
+    def deploy(vm, build):
+        vm.warp('2026-10-21T00:00:00Z')
+        c = build(str(ROOT/'contract.py'), sdk_version='v0.2.12')
+>       assert hasattr(c, 'open_fit'), 'MonotoneDesk API NOT_IMPLEMENTED'
+E       AssertionError: MonotoneDesk API NOT_IMPLEMENTED
+E       assert False
+E        +  where False = hasattr(<CalldataProxy for <_contract_contract.MonotoneDesk object at 0x0000019CA333F5F0>>, 'open_fit')
+
+tests\test_contract.py:17: AssertionError
+__________________ test_strict_bounded_integers[count-10.0] ___________________
+
+direct_vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+direct_deploy = <function direct_deploy.<locals>._deploy at 0x0000019CA3384220>
+field = 'count', value = 10.0
+
+    @pytest.mark.parametrize('field,value',[('score',True),('score',1.0),('score',-1),('score',10001),('positives',False),('positives',11),('positives',-1),('count',0),('count',10001),('count',10.0)])
+    def test_strict_bounded_integers(direct_vm,direct_deploy,field,value):
+>       c=deploy(direct_vm,direct_deploy);sample=json.loads(BODY);sample['bins'][0][field]=value
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_contract.py:81: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+build = <function direct_deploy.<locals>._deploy at 0x0000019CA3384220>
+
+    def deploy(vm, build):
+        vm.warp('2026-10-21T00:00:00Z')
+        c = build(str(ROOT/'contract.py'), sdk_version='v0.2.12')
+>       assert hasattr(c, 'open_fit'), 'MonotoneDesk API NOT_IMPLEMENTED'
+E       AssertionError: MonotoneDesk API NOT_IMPLEMENTED
+E       assert False
+E        +  where False = hasattr(<CalldataProxy for <_contract_contract.MonotoneDesk object at 0x0000019CA33A70B0>>, 'open_fit')
+
+tests\test_contract.py:17: AssertionError
+________________ test_strict_schema_resources_and_json[empty] _________________
+
+direct_vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+direct_deploy = <function direct_deploy.<locals>._deploy at 0x0000019CA33F96C0>
+kind = 'empty'
+
+    @pytest.mark.parametrize('kind',['empty','17rows','total','extra','version_bool','duplicate_json','nan','malformed','oversized'])
+    def test_strict_schema_resources_and_json(direct_vm,direct_deploy,kind):
+>       c=deploy(direct_vm,direct_deploy);s=json.loads(BODY)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_contract.py:87: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+build = <function direct_deploy.<locals>._deploy at 0x0000019CA33F96C0>
+
+    def deploy(vm, build):
+        vm.warp('2026-10-21T00:00:00Z')
+        c = build(str(ROOT/'contract.py'), sdk_version='v0.2.12')
+>       assert hasattr(c, 'open_fit'), 'MonotoneDesk API NOT_IMPLEMENTED'
+E       AssertionError: MonotoneDesk API NOT_IMPLEMENTED
+E       assert False
+E        +  where False = hasattr(<CalldataProxy for <_contract_contract.MonotoneDesk object at 0x0000019CA329AB70>>, 'open_fit')
+
+tests\test_contract.py:17: AssertionError
+________________ test_strict_schema_resources_and_json[17rows] ________________
+
+direct_vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+direct_deploy = <function direct_deploy.<locals>._deploy at 0x0000019CA34A6840>
+kind = '17rows'
+
+    @pytest.mark.parametrize('kind',['empty','17rows','total','extra','version_bool','duplicate_json','nan','malformed','oversized'])
+    def test_strict_schema_resources_and_json(direct_vm,direct_deploy,kind):
+>       c=deploy(direct_vm,direct_deploy);s=json.loads(BODY)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_contract.py:87: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+build = <function direct_deploy.<locals>._deploy at 0x0000019CA34A6840>
+
+    def deploy(vm, build):
+        vm.warp('2026-10-21T00:00:00Z')
+        c = build(str(ROOT/'contract.py'), sdk_version='v0.2.12')
+>       assert hasattr(c, 'open_fit'), 'MonotoneDesk API NOT_IMPLEMENTED'
+E       AssertionError: MonotoneDesk API NOT_IMPLEMENTED
+E       assert False
+E        +  where False = hasattr(<CalldataProxy for <_contract_contract.MonotoneDesk object at 0x0000019CA3502D50>>, 'open_fit')
+
+tests\test_contract.py:17: AssertionError
+________________ test_strict_schema_resources_and_json[total] _________________
+
+direct_vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+direct_deploy = <function direct_deploy.<locals>._deploy at 0x0000019CA3544040>
+kind = 'total'
+
+    @pytest.mark.parametrize('kind',['empty','17rows','total','extra','version_bool','duplicate_json','nan','malformed','oversized'])
+    def test_strict_schema_resources_and_json(direct_vm,direct_deploy,kind):
+>       c=deploy(direct_vm,direct_deploy);s=json.loads(BODY)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_contract.py:87: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+build = <function direct_deploy.<locals>._deploy at 0x0000019CA3544040>
+
+    def deploy(vm, build):
+        vm.warp('2026-10-21T00:00:00Z')
+        c = build(str(ROOT/'contract.py'), sdk_version='v0.2.12')
+>       assert hasattr(c, 'open_fit'), 'MonotoneDesk API NOT_IMPLEMENTED'
+E       AssertionError: MonotoneDesk API NOT_IMPLEMENTED
+E       assert False
+E        +  where False = hasattr(<CalldataProxy for <_contract_contract.MonotoneDesk object at 0x0000019CA352ABA0>>, 'open_fit')
+
+tests\test_contract.py:17: AssertionError
+________________ test_strict_schema_resources_and_json[extra] _________________
+
+direct_vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+direct_deploy = <function direct_deploy.<locals>._deploy at 0x0000019CA35D56C0>
+kind = 'extra'
+
+    @pytest.mark.parametrize('kind',['empty','17rows','total','extra','version_bool','duplicate_json','nan','malformed','oversized'])
+    def test_strict_schema_resources_and_json(direct_vm,direct_deploy,kind):
+>       c=deploy(direct_vm,direct_deploy);s=json.loads(BODY)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_contract.py:87: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+build = <function direct_deploy.<locals>._deploy at 0x0000019CA35D56C0>
+
+    def deploy(vm, build):
+        vm.warp('2026-10-21T00:00:00Z')
+        c = build(str(ROOT/'contract.py'), sdk_version='v0.2.12')
+>       assert hasattr(c, 'open_fit'), 'MonotoneDesk API NOT_IMPLEMENTED'
+E       AssertionError: MonotoneDesk API NOT_IMPLEMENTED
+E       assert False
+E        +  where False = hasattr(<CalldataProxy for <_contract_contract.MonotoneDesk object at 0x0000019CA35FC4D0>>, 'open_fit')
+
+tests\test_contract.py:17: AssertionError
+_____________ test_strict_schema_resources_and_json[version_bool] _____________
+
+direct_vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+direct_deploy = <function direct_deploy.<locals>._deploy at 0x0000019CA366AE80>
+kind = 'version_bool'
+
+    @pytest.mark.parametrize('kind',['empty','17rows','total','extra','version_bool','duplicate_json','nan','malformed','oversized'])
+    def test_strict_schema_resources_and_json(direct_vm,direct_deploy,kind):
+>       c=deploy(direct_vm,direct_deploy);s=json.loads(BODY)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_contract.py:87: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+build = <function direct_deploy.<locals>._deploy at 0x0000019CA366AE80>
+
+    def deploy(vm, build):
+        vm.warp('2026-10-21T00:00:00Z')
+        c = build(str(ROOT/'contract.py'), sdk_version='v0.2.12')
+>       assert hasattr(c, 'open_fit'), 'MonotoneDesk API NOT_IMPLEMENTED'
+E       AssertionError: MonotoneDesk API NOT_IMPLEMENTED
+E       assert False
+E        +  where False = hasattr(<CalldataProxy for <_contract_contract.MonotoneDesk object at 0x0000019CA36C4B90>>, 'open_fit')
+
+tests\test_contract.py:17: AssertionError
+____________ test_strict_schema_resources_and_json[duplicate_json] ____________
+
+direct_vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+direct_deploy = <function direct_deploy.<locals>._deploy at 0x0000019CA3710540>
+kind = 'duplicate_json'
+
+    @pytest.mark.parametrize('kind',['empty','17rows','total','extra','version_bool','duplicate_json','nan','malformed','oversized'])
+    def test_strict_schema_resources_and_json(direct_vm,direct_deploy,kind):
+>       c=deploy(direct_vm,direct_deploy);s=json.loads(BODY)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_contract.py:87: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+build = <function direct_deploy.<locals>._deploy at 0x0000019CA3710540>
+
+    def deploy(vm, build):
+        vm.warp('2026-10-21T00:00:00Z')
+        c = build(str(ROOT/'contract.py'), sdk_version='v0.2.12')
+>       assert hasattr(c, 'open_fit'), 'MonotoneDesk API NOT_IMPLEMENTED'
+E       AssertionError: MonotoneDesk API NOT_IMPLEMENTED
+E       assert False
+E        +  where False = hasattr(<CalldataProxy for <_contract_contract.MonotoneDesk object at 0x0000019CA370FBF0>>, 'open_fit')
+
+tests\test_contract.py:17: AssertionError
+_________________ test_strict_schema_resources_and_json[nan] __________________
+
+direct_vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+direct_deploy = <function direct_deploy.<locals>._deploy at 0x0000019CA379DD00>
+kind = 'nan'
+
+    @pytest.mark.parametrize('kind',['empty','17rows','total','extra','version_bool','duplicate_json','nan','malformed','oversized'])
+    def test_strict_schema_resources_and_json(direct_vm,direct_deploy,kind):
+>       c=deploy(direct_vm,direct_deploy);s=json.loads(BODY)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_contract.py:87: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+build = <function direct_deploy.<locals>._deploy at 0x0000019CA379DD00>
+
+    def deploy(vm, build):
+        vm.warp('2026-10-21T00:00:00Z')
+        c = build(str(ROOT/'contract.py'), sdk_version='v0.2.12')
+>       assert hasattr(c, 'open_fit'), 'MonotoneDesk API NOT_IMPLEMENTED'
+E       AssertionError: MonotoneDesk API NOT_IMPLEMENTED
+E       assert False
+E        +  where False = hasattr(<CalldataProxy for <_contract_contract.MonotoneDesk object at 0x0000019CA37C6210>>, 'open_fit')
+
+tests\test_contract.py:17: AssertionError
+______________ test_strict_schema_resources_and_json[malformed] _______________
+
+direct_vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+direct_deploy = <function direct_deploy.<locals>._deploy at 0x0000019CA382B380>
+kind = 'malformed'
+
+    @pytest.mark.parametrize('kind',['empty','17rows','total','extra','version_bool','duplicate_json','nan','malformed','oversized'])
+    def test_strict_schema_resources_and_json(direct_vm,direct_deploy,kind):
+>       c=deploy(direct_vm,direct_deploy);s=json.loads(BODY)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_contract.py:87: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+build = <function direct_deploy.<locals>._deploy at 0x0000019CA382B380>
+
+    def deploy(vm, build):
+        vm.warp('2026-10-21T00:00:00Z')
+        c = build(str(ROOT/'contract.py'), sdk_version='v0.2.12')
+>       assert hasattr(c, 'open_fit'), 'MonotoneDesk API NOT_IMPLEMENTED'
+E       AssertionError: MonotoneDesk API NOT_IMPLEMENTED
+E       assert False
+E        +  where False = hasattr(<CalldataProxy for <_contract_contract.MonotoneDesk object at 0x0000019CA3853C80>>, 'open_fit')
+
+tests\test_contract.py:17: AssertionError
+______________ test_strict_schema_resources_and_json[oversized] _______________
+
+direct_vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+direct_deploy = <function direct_deploy.<locals>._deploy at 0x0000019CA38D8B80>
+kind = 'oversized'
+
+    @pytest.mark.parametrize('kind',['empty','17rows','total','extra','version_bool','duplicate_json','nan','malformed','oversized'])
+    def test_strict_schema_resources_and_json(direct_vm,direct_deploy,kind):
+>       c=deploy(direct_vm,direct_deploy);s=json.loads(BODY)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_contract.py:87: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+build = <function direct_deploy.<locals>._deploy at 0x0000019CA38D8B80>
+
+    def deploy(vm, build):
+        vm.warp('2026-10-21T00:00:00Z')
+        c = build(str(ROOT/'contract.py'), sdk_version='v0.2.12')
+>       assert hasattr(c, 'open_fit'), 'MonotoneDesk API NOT_IMPLEMENTED'
+E       AssertionError: MonotoneDesk API NOT_IMPLEMENTED
+E       assert False
+E        +  where False = hasattr(<CalldataProxy for <_contract_contract.MonotoneDesk object at 0x0000019CA3937EF0>>, 'open_fit')
+
+tests\test_contract.py:17: AssertionError
+_________________ test_bad_namespace_rejected_before_fetch[.] _________________
+
+direct_vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+direct_deploy = <function direct_deploy.<locals>._deploy at 0x0000019CA3946200>
+repo = '.'
+
+    @pytest.mark.parametrize('repo',['.','..','%2e','repo?bad'])
+    def test_bad_namespace_rejected_before_fetch(direct_vm,direct_deploy,repo):
+>       c=deploy(direct_vm,direct_deploy)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_contract.py:103: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+build = <function direct_deploy.<locals>._deploy at 0x0000019CA3946200>
+
+    def deploy(vm, build):
+        vm.warp('2026-10-21T00:00:00Z')
+        c = build(str(ROOT/'contract.py'), sdk_version='v0.2.12')
+>       assert hasattr(c, 'open_fit'), 'MonotoneDesk API NOT_IMPLEMENTED'
+E       AssertionError: MonotoneDesk API NOT_IMPLEMENTED
+E       assert False
+E        +  where False = hasattr(<CalldataProxy for <_contract_contract.MonotoneDesk object at 0x0000019CA39E1370>>, 'open_fit')
+
+tests\test_contract.py:17: AssertionError
+________________ test_bad_namespace_rejected_before_fetch[..] _________________
+
+direct_vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+direct_deploy = <function direct_deploy.<locals>._deploy at 0x0000019CA39ED440>
+repo = '..'
+
+    @pytest.mark.parametrize('repo',['.','..','%2e','repo?bad'])
+    def test_bad_namespace_rejected_before_fetch(direct_vm,direct_deploy,repo):
+>       c=deploy(direct_vm,direct_deploy)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_contract.py:103: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+build = <function direct_deploy.<locals>._deploy at 0x0000019CA39ED440>
+
+    def deploy(vm, build):
+        vm.warp('2026-10-21T00:00:00Z')
+        c = build(str(ROOT/'contract.py'), sdk_version='v0.2.12')
+>       assert hasattr(c, 'open_fit'), 'MonotoneDesk API NOT_IMPLEMENTED'
+E       AssertionError: MonotoneDesk API NOT_IMPLEMENTED
+E       assert False
+E        +  where False = hasattr(<CalldataProxy for <_contract_contract.MonotoneDesk object at 0x0000019CA3A325A0>>, 'open_fit')
+
+tests\test_contract.py:17: AssertionError
+________________ test_bad_namespace_rejected_before_fetch[%2e] ________________
+
+direct_vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+direct_deploy = <function direct_deploy.<locals>._deploy at 0x0000019CA3A95080>
+repo = '%2e'
+
+    @pytest.mark.parametrize('repo',['.','..','%2e','repo?bad'])
+    def test_bad_namespace_rejected_before_fetch(direct_vm,direct_deploy,repo):
+>       c=deploy(direct_vm,direct_deploy)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_contract.py:103: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+build = <function direct_deploy.<locals>._deploy at 0x0000019CA3A95080>
+
+    def deploy(vm, build):
+        vm.warp('2026-10-21T00:00:00Z')
+        c = build(str(ROOT/'contract.py'), sdk_version='v0.2.12')
+>       assert hasattr(c, 'open_fit'), 'MonotoneDesk API NOT_IMPLEMENTED'
+E       AssertionError: MonotoneDesk API NOT_IMPLEMENTED
+E       assert False
+E        +  where False = hasattr(<CalldataProxy for <_contract_contract.MonotoneDesk object at 0x0000019CA3A87200>>, 'open_fit')
+
+tests\test_contract.py:17: AssertionError
+_____________ test_bad_namespace_rejected_before_fetch[repo?bad] ______________
+
+direct_vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+direct_deploy = <function direct_deploy.<locals>._deploy at 0x0000019CA3B12660>
+repo = 'repo?bad'
+
+    @pytest.mark.parametrize('repo',['.','..','%2e','repo?bad'])
+    def test_bad_namespace_rejected_before_fetch(direct_vm,direct_deploy,repo):
+>       c=deploy(direct_vm,direct_deploy)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_contract.py:103: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+build = <function direct_deploy.<locals>._deploy at 0x0000019CA3B12660>
+
+    def deploy(vm, build):
+        vm.warp('2026-10-21T00:00:00Z')
+        c = build(str(ROOT/'contract.py'), sdk_version='v0.2.12')
+>       assert hasattr(c, 'open_fit'), 'MonotoneDesk API NOT_IMPLEMENTED'
+E       AssertionError: MonotoneDesk API NOT_IMPLEMENTED
+E       assert False
+E        +  where False = hasattr(<CalldataProxy for <_contract_contract.MonotoneDesk object at 0x0000019CA3B87BC0>>, 'open_fit')
+
+tests\test_contract.py:17: AssertionError
+______ test_validator_recomputes_entire_packet_and_rejects_forgery[rate] ______
+
+direct_vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+direct_deploy = <function direct_deploy.<locals>._deploy at 0x0000019CA3BC0180>
+field = 'rate'
+
+    @pytest.mark.parametrize('field',['rate','loss','binding'])
+    def test_validator_recomputes_entire_packet_and_rejects_forgery(direct_vm,direct_deploy,field):
+>       c=deploy(direct_vm,direct_deploy);derive(direct_vm,c);packet=c.get_fit('fit')['last_capture']
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_contract.py:110: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+build = <function direct_deploy.<locals>._deploy at 0x0000019CA3BC0180>
+
+    def deploy(vm, build):
+        vm.warp('2026-10-21T00:00:00Z')
+        c = build(str(ROOT/'contract.py'), sdk_version='v0.2.12')
+>       assert hasattr(c, 'open_fit'), 'MonotoneDesk API NOT_IMPLEMENTED'
+E       AssertionError: MonotoneDesk API NOT_IMPLEMENTED
+E       assert False
+E        +  where False = hasattr(<CalldataProxy for <_contract_contract.MonotoneDesk object at 0x0000019CA3B9F7D0>>, 'open_fit')
+
+tests\test_contract.py:17: AssertionError
+______ test_validator_recomputes_entire_packet_and_rejects_forgery[loss] ______
+
+direct_vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+direct_deploy = <function direct_deploy.<locals>._deploy at 0x0000019CA3E55580>
+field = 'loss'
+
+    @pytest.mark.parametrize('field',['rate','loss','binding'])
+    def test_validator_recomputes_entire_packet_and_rejects_forgery(direct_vm,direct_deploy,field):
+>       c=deploy(direct_vm,direct_deploy);derive(direct_vm,c);packet=c.get_fit('fit')['last_capture']
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_contract.py:110: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+build = <function direct_deploy.<locals>._deploy at 0x0000019CA3E55580>
+
+    def deploy(vm, build):
+        vm.warp('2026-10-21T00:00:00Z')
+        c = build(str(ROOT/'contract.py'), sdk_version='v0.2.12')
+>       assert hasattr(c, 'open_fit'), 'MonotoneDesk API NOT_IMPLEMENTED'
+E       AssertionError: MonotoneDesk API NOT_IMPLEMENTED
+E       assert False
+E        +  where False = hasattr(<CalldataProxy for <_contract_contract.MonotoneDesk object at 0x0000019CA3B842C0>>, 'open_fit')
+
+tests\test_contract.py:17: AssertionError
+____ test_validator_recomputes_entire_packet_and_rejects_forgery[binding] _____
+
+direct_vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+direct_deploy = <function direct_deploy.<locals>._deploy at 0x0000019CA3ECAD40>
+field = 'binding'
+
+    @pytest.mark.parametrize('field',['rate','loss','binding'])
+    def test_validator_recomputes_entire_packet_and_rejects_forgery(direct_vm,direct_deploy,field):
+>       c=deploy(direct_vm,direct_deploy);derive(direct_vm,c);packet=c.get_fit('fit')['last_capture']
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_contract.py:110: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+build = <function direct_deploy.<locals>._deploy at 0x0000019CA3ECAD40>
+
+    def deploy(vm, build):
+        vm.warp('2026-10-21T00:00:00Z')
+        c = build(str(ROOT/'contract.py'), sdk_version='v0.2.12')
+>       assert hasattr(c, 'open_fit'), 'MonotoneDesk API NOT_IMPLEMENTED'
+E       AssertionError: MonotoneDesk API NOT_IMPLEMENTED
+E       assert False
+E        +  where False = hasattr(<CalldataProxy for <_contract_contract.MonotoneDesk object at 0x0000019CA3AF5EB0>>, 'open_fit')
+
+tests\test_contract.py:17: AssertionError
+________ test_fresh_source_hash_and_failed_confirm_do_not_modify_state ________
+
+direct_vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+direct_deploy = <function direct_deploy.<locals>._deploy at 0x0000019CA3F745E0>
+
+    def test_fresh_source_hash_and_failed_confirm_do_not_modify_state(direct_vm,direct_deploy):
+>       c=deploy(direct_vm,direct_deploy);derive(direct_vm,c);d=c.get_fit('fit')
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_contract.py:118: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+build = <function direct_deploy.<locals>._deploy at 0x0000019CA3F745E0>
+
+    def deploy(vm, build):
+        vm.warp('2026-10-21T00:00:00Z')
+        c = build(str(ROOT/'contract.py'), sdk_version='v0.2.12')
+>       assert hasattr(c, 'open_fit'), 'MonotoneDesk API NOT_IMPLEMENTED'
+E       AssertionError: MonotoneDesk API NOT_IMPLEMENTED
+E       assert False
+E        +  where False = hasattr(<CalldataProxy for <_contract_contract.MonotoneDesk object at 0x0000019CA3F57500>>, 'open_fit')
+
+tests\test_contract.py:17: AssertionError
+__________ test_creator_cas_cert_binding_terminal_and_offline_revoke __________
+
+direct_vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+direct_deploy = <function direct_deploy.<locals>._deploy at 0x0000019CA4005F80>
+
+    def test_creator_cas_cert_binding_terminal_and_offline_revoke(direct_vm,direct_deploy):
+        from gltest.direct import create_address
+>       c=deploy(direct_vm,direct_deploy);opened(direct_vm,c)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_contract.py:129: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+vm = VMContext(_sender=b'\xdc\x18\xaa=\xb8\xbc\x91\xa6\xe3\x90\xa3^}\x08\x11$o\xf3\xab\x01', _origin=None, _contract_addres...m_mocks_hit=set(), _live_web_handler=None, _live_llm_handler=None, _gl_call_hook=None, _traces=[], _trace_enabled=True)
+build = <function direct_deploy.<locals>._deploy at 0x0000019CA4005F80>
+
+    def deploy(vm, build):
+        vm.warp('2026-10-21T00:00:00Z')
+        c = build(str(ROOT/'contract.py'), sdk_version='v0.2.12')
+>       assert hasattr(c, 'open_fit'), 'MonotoneDesk API NOT_IMPLEMENTED'
+E       AssertionError: MonotoneDesk API NOT_IMPLEMENTED
+E       assert False
+E        +  where False = hasattr(<CalldataProxy for <_contract_contract.MonotoneDesk object at 0x0000019CA4083CE0>>, 'open_fit')
+
+tests\test_contract.py:17: AssertionError
+=========================== short test summary info ===========================
+FAILED tests/test_contract.py::test_literal_exact_weighted_pava_blocks_losses_and_confirm
+FAILED tests/test_contract.py::test_equal_means_merge_canonically_and_loss_is_exact_zero
+FAILED tests/test_contract.py::test_duplicate_scores_keep_original_row_loss_constant
+FAILED tests/test_contract.py::test_monotone_extremes_and_single_row_are_unchanged
+FAILED tests/test_contract.py::test_descending_sample_pools_and_input_permutation_does_not_change_fit
+FAILED tests/test_contract.py::test_strict_bounded_integers[score-True] - Ass...
+FAILED tests/test_contract.py::test_strict_bounded_integers[score-1.0] - Asse...
+FAILED tests/test_contract.py::test_strict_bounded_integers[score--1] - Asser...
+FAILED tests/test_contract.py::test_strict_bounded_integers[score-10001] - As...
+FAILED tests/test_contract.py::test_strict_bounded_integers[positives-False]
+FAILED tests/test_contract.py::test_strict_bounded_integers[positives-11] - A...
+FAILED tests/test_contract.py::test_strict_bounded_integers[positives--1] - A...
+FAILED tests/test_contract.py::test_strict_bounded_integers[count-0] - Assert...
+FAILED tests/test_contract.py::test_strict_bounded_integers[count-10001] - As...
+FAILED tests/test_contract.py::test_strict_bounded_integers[count-10.0] - Ass...
+FAILED tests/test_contract.py::test_strict_schema_resources_and_json[empty]
+FAILED tests/test_contract.py::test_strict_schema_resources_and_json[17rows]
+FAILED tests/test_contract.py::test_strict_schema_resources_and_json[total]
+FAILED tests/test_contract.py::test_strict_schema_resources_and_json[extra]
+FAILED tests/test_contract.py::test_strict_schema_resources_and_json[version_bool]
+FAILED tests/test_contract.py::test_strict_schema_resources_and_json[duplicate_json]
+FAILED tests/test_contract.py::test_strict_schema_resources_and_json[nan] - A...
+FAILED tests/test_contract.py::test_strict_schema_resources_and_json[malformed]
+FAILED tests/test_contract.py::test_strict_schema_resources_and_json[oversized]
+FAILED tests/test_contract.py::test_bad_namespace_rejected_before_fetch[.] - ...
+FAILED tests/test_contract.py::test_bad_namespace_rejected_before_fetch[..]
+FAILED tests/test_contract.py::test_bad_namespace_rejected_before_fetch[%2e]
+FAILED tests/test_contract.py::test_bad_namespace_rejected_before_fetch[repo?bad]
+FAILED tests/test_contract.py::test_validator_recomputes_entire_packet_and_rejects_forgery[rate]
+FAILED tests/test_contract.py::test_validator_recomputes_entire_packet_and_rejects_forgery[loss]
+FAILED tests/test_contract.py::test_validator_recomputes_entire_packet_and_rejects_forgery[binding]
+FAILED tests/test_contract.py::test_fresh_source_hash_and_failed_confirm_do_not_modify_state
+FAILED tests/test_contract.py::test_creator_cas_cert_binding_terminal_and_offline_revoke
+33 failed in 3.59s
+WARNING: File `gltest.config.yaml` not found in the current directory, using default config, create a `gltest.config.yaml` file to manage multiple networks
+INFO: Using the following configuration:
+INFO:   RPC URL: http://127.0.0.1:4000/api
+INFO:   Selected Network: localnet
+INFO:   Available networks: ['localnet', 'studionet', 'testnet_asimov', 'testnet_bradbury']
+INFO:   Selected chain type: localnet
+INFO:   Available chains: localnet, studionet, testnet_asimov, testnet_bradbury
+INFO:   Contracts directory: contracts
+INFO:   Artifacts directory: artifacts
+INFO:   Environment: .env
+INFO:   Default wait interval: 3000 ms
+INFO:   Default wait retries: 50
+INFO:   Leader only mode: False

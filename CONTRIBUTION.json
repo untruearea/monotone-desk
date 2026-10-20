@@ -1,0 +1,30 @@
+{
+  "title": "MonotoneDesk",
+  "profile": "03",
+  "kind": "Project",
+  "status": "local_complete_candidate_awaiting_live_verification",
+  "contract": "contract.py",
+  "contract_sha256": "7f125508b8f743be9e9c4606fd40353429216d860065438e27ffddb1c0bf5434",
+  "constructor_args": [],
+  "counted_as_independent_ic": false,
+  "python_tests": 34,
+  "actual_sdk_contract_tests": 33,
+  "frontend_tests": 55,
+  "network": {
+    "name": "Studio",
+    "chain_id": 61999
+  },
+  "public_url": null,
+  "source_fixture_public_url": null,
+  "deployment_address": null,
+  "deployment_hash": null,
+  "hosting_url": null,
+  "live_business_flow_verified": false,
+  "description": "Exact rational weighted PAVA calibration with complete table/curve/block workflow",
+  "shared_infrastructure_only": [
+    "SDK connection and receipt adapter",
+    "SDK verification scaffold"
+  ],
+  "frontend_revision": "receipt-revision-2026-10-21",
+  "previous_reviewed_frontend_tests": 49
+}

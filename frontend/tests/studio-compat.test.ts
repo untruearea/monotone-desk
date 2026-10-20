@@ -1,0 +1,13 @@
+import {expect,it,vi} from 'vitest';
+import {formatTransaction} from 'viem';
+import {isSuccessful} from 'genlayer-js';
+import type {GenLayerTransaction} from 'genlayer-js/types';
+import reference from '../../fixtures/studio-constructor-reference.json';
+import {completeWrite,PendingSubmission} from '../src/core';
+const hash=reference.hash as `0x${string}`,context={from:reference.from_address,to:reference.to_address,value:0n};
+const raw=()=>structuredClone(reference);
+const formatted=()=>({...formatTransaction(raw() as never),statusName:'FINALIZED',lifecycle:{state:'finalized'}}) as unknown as GenLayerTransaction;
+it('reproduces actual SDK helper and viem formatter differences without mocking them',()=>{expect(isSuccessful(reference as unknown as GenLayerTransaction)).toBe(false);expect(formatTransaction(raw() as never).value).toBeUndefined();expect((formatted() as Record<string,unknown>).txExecutionResultName).toBeUndefined();});
+it('proves actual formatted Studio success through independently verified raw receipt without synthesizing SDK fields',async()=>{const tx=formatted();await expect(completeWrite(async()=>hash,async()=>tx,()=>{},async()=>raw(),context)).resolves.toBe(hash);expect(tx.value).toBeUndefined();expect(tx.txExecutionResultName).toBeUndefined();});
+it('can recover a submitted hash using raw strict evidence when SDK formatting throws, without resubmission',async()=>{const seen=vi.fn();await expect(completeWrite(async()=>hash,async()=>{throw TypeError('SDK formatter mismatch');},()=>{},async()=>raw(),context,seen)).resolves.toBe(hash);expect(seen).toHaveBeenCalledWith(hash,null,raw());const g=new PendingSubmission({getItem:()=>null,setItem:()=>{},removeItem:()=>{}},'x');g.record(hash,context);expect(g.resolve(hash,null,raw())).toBe('success');});
+it('does not accept missing raw final proof when SDK observation throws',async()=>{const once=vi.fn(async()=>hash);await expect(completeWrite(once,async()=>{throw TypeError('SDK formatter mismatch');},()=>{},async()=>({...raw(),status:'ACCEPTED'}),context)).rejects.toThrow();expect(once).toHaveBeenCalledTimes(1);});
